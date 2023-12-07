@@ -89,7 +89,7 @@ helm repo list
 
 kubectl create namespace prometheus
 
-Step 8.3 - Install prometheus
+# Step 8.3 - Install prometheus
 
 helm install prometheus prometheus-community/prometheus --namespaceprometheus --set alertmanager.persistentVolume.storageClass="gp2" --set server.persistentVolume.storageClass="gp2"
 
