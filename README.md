@@ -1,6 +1,6 @@
 # REAL-TIME-MONITORING-using-Prometheus-and-Grafana-Dashboard-on-EKS-Cluster-using-HelmChart
 
-Step 1 Setup EC2 Instance Instance Type as t2.medium AMIs as UbuntuUS-EAST-1
+# Step 1 Setup EC2 Instance Instance Type as t2.medium AMIs as UbuntuUS-EAST-1
 
 
 Step 1.1 – Create the IAM role having full access
