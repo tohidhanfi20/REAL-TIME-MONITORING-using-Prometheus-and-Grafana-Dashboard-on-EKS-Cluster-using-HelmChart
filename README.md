@@ -23,9 +23,11 @@ sudo./aws/install
 
 # Step 3 - Install and Setup Kubectl
 
-curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl-s
+sudo apt update
 
-https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+sudo apt install curl -y
+
+curl -LO https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
 
 chmod +x ./kubectl
 
