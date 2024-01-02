@@ -66,6 +66,9 @@ helm version
     7. MinimumNumberofnodes: --nodes-min2
     8. MaximumNumberofnodes: --nodes-max3
 
+eksctl create cluster --name monitor --version 1.24 --region ap-south-1 --nodegroup-name worker-nodes --node-type t2.medium --nodes 2 --nodes-min 2 --nodes-max 3
+
+
 # Step 6.1 -IF ANY ERROR
 
 aws eks update-kubeconfig --region <region-code> --name <cluster-name>
