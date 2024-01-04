@@ -46,9 +46,11 @@ Go to EC2 -> Click on Actions on the left hands ide -> Security -> Modify IAM ro
 
 # Step 5 - Install Helm chart
 
-    curl -fsSL-o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+    curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 
-    chmod 700 get_helm.sh ./get_helm.sh
+    chmod 700 get_helm.sh
+
+    ./get_helm.sh
 
     helm version
 
