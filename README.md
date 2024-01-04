@@ -106,11 +106,11 @@ Add Prometheus helm chart repository
 
 Your cluster has an Open IDConnect(OIDC) issuer URL associated with it. To use AWS Identity and Access Management (IAM) roles for service accounts, an IAMOIDC provider must exist for your cluster's OIDC issuer URL.
 
-    oidc_id=$(aws eks describe-cluster --name monitor --region ap-south-1 --query "cluster.identity.oidc.issuer" --output text | cut -d '/' -f 5)
+    oidc_id=$(aws eks describe-cluster --name moniter --region ap-south-1 --query "cluster.identity.oidc.issuer" --output text | cut -d '/' -f 5)
 
     aws iam list-open-id-connect-providers | grep $oidc_id | cut -d "/" -f4
 
-    eksctl utils associate-iam-oidc-provider --cluster monitor --approve --region ap-south-1
+    eksctl utils associate-iam-oidc-provider --cluster moniter --approve --region ap-south-1
 
 
 # Step 10 – Create iam service account with role
@@ -122,7 +122,7 @@ Your cluster has an Open IDConnect(OIDC) issuer URL associated with it. To use A
 
 Enter your account ID and cluster name.
 
-    eksctl create addon --name aws-ebs-csi-driver --cluster monitor --service-account-role-arn arn:aws:iam::141936385254:role/AmazonEKS_EBS_CSI_DriverRole --force --
+    eksctl create addon --name aws-ebs-csi-driver --cluster moniter --service-account-role-arn arn:aws:iam::141936385254:role/AmazonEKS_EBS_CSI_DriverRole --force --
     region ap-south-1
 
 # Step 10.2 - kubectl get pods -n prometheus
