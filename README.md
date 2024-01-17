@@ -122,8 +122,7 @@ Your cluster has an Open IDConnect(OIDC) issuer URL associated with it. To use A
 
 Enter your account ID and cluster name.
 
-    eksctl create addon --name aws-ebs-csi-driver --cluster moniter --service-account-role-arn arn:aws:iam::141936385254:role/AmazonEKS_EBS_CSI_DriverRole --force --
-    region ap-south-1
+    eksctl create addon --name aws-ebs-csi-driver --cluster monitor1 --service-account-role-arn arn:aws:iam::141936385254:role/AmazonEKS_EBS_CSI_DriverRole --force --region ap-south-1
 
 # Step 10.2 - kubectl get pods -n prometheus
 
