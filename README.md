@@ -15,10 +15,12 @@ Go to EC2 -> Click on Actions on the left hands ide -> Security -> Modify IAM ro
 
 # Step 2 - Install AWS CLI and Configure.
 
-    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" 
-    sudo apt install unzip                            
-    unzip awscliv2.zip         
-    sudo./aws/install
+    
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    
+    sudo apt install unzip
+    unzip awscliv2.zip
+    sudo ./aws/install
 
 # Step 3 - Install and Setup Kubectl
 
