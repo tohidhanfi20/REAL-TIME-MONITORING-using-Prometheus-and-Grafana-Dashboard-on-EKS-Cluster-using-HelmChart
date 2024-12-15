@@ -195,7 +195,7 @@ Load and select the source as Prometheus
 
 # Step 14 - Clean Up
 
-    eksctl delete cluster --nameeks2 --region us-east-1
+    eksctl delete cluster --nameeks2 --region ap-south-1
 
 
 # THANK YOU
